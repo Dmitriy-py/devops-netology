@@ -11,3 +11,4 @@
     *   Файлы переменных (`*.tfvars`, `*.auto.tfvars`, `*.auto.tfvars.json`)
     *   Файлы кеша Terraform (`.terraform/`)
     *   Исполняемые файлы Terraform (`*.terraform`)
+*   **“This line was added in the fix branch”**
