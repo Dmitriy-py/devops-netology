@@ -50,4 +50,15 @@
 
 <img width="1920" height="1080" alt="Снимок экрана (1526)" src="https://github.com/user-attachments/assets/4d5fac11-4178-444e-9b11-abef088d7acd" />
 
+## Задание 4. Упрощаем себе жизнь
+
+<img width="1920" height="1080" alt="Снимок экрана (1533)" src="https://github.com/user-attachments/assets/52ad955c-76aa-446a-a8f0-cd338c562c69" />
+
+<img width="1920" height="1080" alt="Снимок экрана (1535)" src="https://github.com/user-attachments/assets/0392d715-af0d-439e-9bdf-fc661833259d" />
+
+<img width="1920" height="1080" alt="Снимок экрана (1536)" src="https://github.com/user-attachments/assets/1dba3bd7-20a6-454d-bf7f-0339d403f929" />
+
+<img width="1920" height="1080" alt="Снимок экрана (1536)" src="https://github.com/user-attachments/assets/d5d9a982-3fe1-40bf-8f3d-6fae0d7e3f58" />
+
+
 
