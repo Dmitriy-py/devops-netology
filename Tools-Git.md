@@ -89,7 +89,7 @@ Date:   Tue Jan 21 17:08:06 2020 -0800
 ### Хеш первого: ` 56cd7859e05c36c06b56d013b55a252d0bb7e158 `
 ### Хеш второго: ` 9ea88f22fc6269854151c571162c5bcf958bee2b `
 
-## 5. Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+## 4. Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
 
 ### Команда: ### ` git log v0.12.23..v0.12.24 --pretty=format:"%H %s" `
 ### Вывод:
@@ -107,7 +107,7 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 225466bc3e5f35baa5d07197bbc079345b77525e Cleanup after v0.12.23 release
 
 ```
-### Коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24
+### Коммиты, которые были сделаны между тегами v0.12.23 и v0.12.24
 
 #### 33ff1c03bb960b332be3af2e333462dde88b279e ` v0.12.24 `
 #### b14b74c4939dcab573326f4e3ee2a62e23e12f89 ` [Website] vmc provider links `
@@ -120,14 +120,22 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 #### dd01a35078f040ca984cdd349f18d0b67e486c35 ` Update CHANGELOG.md `
 #### 225466bc3e5f35baa5d07197bbc079345b77525e ` Cleanup after v0.12.23 release `
 
-## 6. Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func                    providerSource(...) (вместо троеточия перечислены аргументы).
+## 5. Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func                    providerSource(...) (вместо троеточия перечислены аргументы).
 
-<img width="1920" height="1080" alt="Снимок экрана (1571)" src="https://github.com/user-attachments/assets/784063bb-7b17-4c76-aa0b-c330c5f17afa" />
+### Команда: ### ` git log -S 'func providerSource(' `
+### Вывод:
+
+```
+commit 8c928e83589d90a031f811fae52a81be7153e82f
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Thu Apr 2 18:04:39 2020 -0700
+
+```
 
 ### Коммит, в котором была создана функция func providerSource
 ### ` commit 8c928e83589d90a031f811fae52a81be7153e82f `
 
-## 7. Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+## 6. Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
 <img width="1920" height="1080" alt="Снимок экрана (1572)" src="https://github.com/user-attachments/assets/e6b6ac13-53ef-4a59-b6f8-1bec6b0c2208" />
 
@@ -137,7 +145,7 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 * #### ` c0b17610965450a89598da491ce9b6b5cbd6393f `
 * #### ` 8364383c359a6b738a436d1b7745ccdce178df47 `
 
- ## 8. Кто автор функции synchronizedWriters?
+ ## 7. Кто автор функции synchronizedWriters?
 
 <img width="1920" height="1080" alt="Снимок экрана (1573)" src="https://github.com/user-attachments/assets/a87992fb-0a09-4628-acd2-ad05906328dd" />
 
