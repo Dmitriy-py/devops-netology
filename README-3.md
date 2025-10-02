@@ -39,13 +39,7 @@
 
 <img width="1920" height="1080" alt="Снимок экрана (1539)" src="https://github.com/user-attachments/assets/6f6c772f-4427-4d7f-b580-da21b1f66c03" />
 
-<img width="1920" height="1080" alt="Снимок экрана (1541)" src="https://github.com/user-attachments/assets/06a2eea5-d0ba-482a-b2ee-89837e0341b6" />
-
-<img width="1920" height="1080" alt="Снимок экрана (1542)" src="https://github.com/user-attachments/assets/0c302f55-a957-49f6-b922-984b37f40d2d" />
-
-<img width="1920" height="1080" alt="Снимок экрана (1543)" src="https://github.com/user-attachments/assets/2b416f22-092b-4c52-9847-40cc40d6d0c9" />
-
-<img width="1920" height="1080" alt="Снимок экрана (1544)" src="https://github.com/user-attachments/assets/e4493f1b-039e-4be6-9153-e683d5044d2f" />
+### **Часть 2. Подготовка файла `merge.sh` (ветка `git-merge`)**
 
 <img width="1920" height="1080" alt="Снимок экрана (1546)" src="https://github.com/user-attachments/assets/1c4f830a-5c4d-44bd-97b8-6f34889fa665" />
 
