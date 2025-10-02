@@ -50,7 +50,40 @@ Date:   Thu Jun 18 10:29:58 2020 -0400
 
 ## 3. Сколько родителей у коммита b8d720? Напишите их хеши.
 
-<img width="1920" height="1080" alt="Снимок экрана (1568)" src="https://github.com/user-attachments/assets/923ed108-987a-4071-9287-674fd4c71ce7" />
+### Команда: ### ` git show b8d720 `
+### Вывод:
+
+```
+commit b8d720f8340221f2146e4e4870bf2ee0bc48f2d5
+Merge: 56cd7859e0 9ea88f22fc
+Author: Chris Griggs <cgriggs@hashicorp.com>
+Date:   Tue Jan 21 17:45:48 2020 -0800
+
+```
+Merge: 56cd7859e0 9ea88f22fc- указывает на количество родителей 2
+
+### Команда: ### ` git show b8d720^1 `
+### Вывод:
+
+```
+commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
+Merge: 58dcac4b79 ffbcf55817
+Author: Chris Griggs <cgriggs@hashicorp.com>
+Date:   Mon Jan 13 13:19:09 2020 -0800
+
+```
+### Узнали полный хеш коммита-1
+
+### Команда: ### ` git show b8d720^2 `
+### Вывод:
+
+```
+commit 9ea88f22fc6269854151c571162c5bcf958bee2b
+Author: Chris Griggs <cgriggs@hashicorp.com>
+Date:   Tue Jan 21 17:08:06 2020 -0800
+
+```
+### Узнали полный хеш коммита-2
 
 ### Родителей двое
 ### Хеш первого: ` 56cd7859e05c36c06b56d013b55a252d0bb7e158 `
