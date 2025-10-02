@@ -1,8 +1,8 @@
 # Домашнее задание к занятию «Ветвления в Git»
 
-## ` Дмитрий Климов `
+### ` Дмитрий Климов `
 
-Задание «Ветвление, merge и rebase»
+## Задание «Ветвление, merge и rebase»
 
 <img width="1920" height="1080" alt="Снимок экрана (1539)" src="https://github.com/user-attachments/assets/6f6c772f-4427-4d7f-b580-da21b1f66c03" />
 
