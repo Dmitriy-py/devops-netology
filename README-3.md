@@ -39,6 +39,8 @@
 
 <img width="1920" height="1080" alt="Снимок экрана (1539)" src="https://github.com/user-attachments/assets/6f6c772f-4427-4d7f-b580-da21b1f66c03" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1541)" src="https://github.com/user-attachments/assets/d9cfac39-b513-40ed-99a4-de013c552210" />
+
 ### **Часть 2. Подготовка файла `merge.sh` (ветка `git-merge`)**
 
 <img width="1920" height="1080" alt="Снимок экрана (1546)" src="https://github.com/user-attachments/assets/1c4f830a-5c4d-44bd-97b8-6f34889fa665" />
