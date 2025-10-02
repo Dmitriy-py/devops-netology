@@ -138,9 +138,8 @@
 
 1.  **Команды:**
     ```bash
-    git checkout ee8b901 # Или другой хеш, если вы его переопределяли
+    git checkout ee8b901
     git switch -c git-rebase
-    # (Если ветка git-rebase существовала, то git checkout git-rebase и git reset --hard ee8b901)
     ```
 
 **Шаг 3-4. Изменение `rebase.sh` ( `git-rebase 1` )**
@@ -160,7 +159,7 @@
     ```bash
     git add branching/rebase.sh
     git commit -m "git-rebase 1"
-    git push -u origin git-rebase -f # Используем -f, так как это переписывание истории
+    git push -u origin git-rebase -f
     git push -u gitlab git-rebase -f
     ```
 
