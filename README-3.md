@@ -95,6 +95,9 @@
 
 ---
 
+
+<img width="1920" height="1080" alt="Снимок экрана (1546)" src="https://github.com/user-attachments/assets/1c4f830a-5c4d-44bd-97b8-6f34889fa665" />
+
 ### **Часть 3. Изменения в `main`**
 
 **Шаг 1-2. Возврат в `main` и изменение `rebase.sh`**
@@ -128,9 +131,6 @@
     ```
 
 ---
-
-
-<img width="1920" height="1080" alt="Снимок экрана (1546)" src="https://github.com/user-attachments/assets/1c4f830a-5c4d-44bd-97b8-6f34889fa665" />
 
 <img width="1920" height="1080" alt="Снимок экрана (1547)" src="https://github.com/user-attachments/assets/7d69cd66-0956-44a5-b33f-a386e1f8b799" />
 
