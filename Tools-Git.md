@@ -20,24 +20,24 @@
 
 ## Ответ:
 
-## Клонирование репазитория:
+## 1. Клонирование репазитория:
 
 <img width="1920" height="1080" alt="Снимок экрана (1561)" src="https://github.com/user-attachments/assets/19ac1968-8b3c-45b5-b71b-42d964f7424c" />
 
-## Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea:
+## 2. Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea:
 
 <img width="1920" height="1080" alt="Снимок экрана (1564)" src="https://github.com/user-attachments/assets/18b9f19c-d0a1-42d5-a104-b7215f5a8963" />
 
 ### Полный хеш: ` aefead2207ef7e2aa5dc81a34aedf0cad4c32545 `
 ### Комментарий: ` Update CHANGELOG.md `
 
-## Какому тегу соответствует коммит 85024d3?
+## 3. Какому тегу соответствует коммит 85024d3?
 
 <img width="1920" height="1080" alt="Снимок экрана (1566)" src="https://github.com/user-attachments/assets/b3199190-f2ce-43f1-95b7-0c7604521ccc" />
 
 ### коммит 85024d3 соответствует тегу: ` v0.12.23 `
 
-## Сколько родителей у коммита b8d720? Напишите их хеши.
+## 4. Сколько родителей у коммита b8d720? Напишите их хеши.
 
 <img width="1920" height="1080" alt="Снимок экрана (1568)" src="https://github.com/user-attachments/assets/923ed108-987a-4071-9287-674fd4c71ce7" />
 
@@ -45,7 +45,7 @@
 ### Хеш первого: ` 56cd7859e05c36c06b56d013b55a252d0bb7e158 `
 ### Хеш второго: ` 9ea88f22fc6269854151c571162c5bcf958bee2b `
 
-## Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+## 5. Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
 
 <img width="1920" height="1080" alt="Снимок экрана (1569)" src="https://github.com/user-attachments/assets/e63ea7e3-8931-4eab-8c8a-3aae6ed7c32b" />
 
@@ -60,14 +60,14 @@
 #### dd01a35078f040ca984cdd349f18d0b67e486c35 ` Update CHANGELOG.md `
 #### 225466bc3e5f35baa5d07197bbc079345b77525e ` Cleanup after v0.12.23 release `
 
-## Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func                    providerSource(...) (вместо троеточия перечислены аргументы).
+## 6. Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func                    providerSource(...) (вместо троеточия перечислены аргументы).
 
 <img width="1920" height="1080" alt="Снимок экрана (1571)" src="https://github.com/user-attachments/assets/784063bb-7b17-4c76-aa0b-c330c5f17afa" />
 
 ### Коммит, в котором была создана функция func providerSource
 ### ` commit 8c928e83589d90a031f811fae52a81be7153e82f `
 
-## Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+## 7. Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
 <img width="1920" height="1080" alt="Снимок экрана (1572)" src="https://github.com/user-attachments/assets/e6b6ac13-53ef-4a59-b6f8-1bec6b0c2208" />
 
@@ -77,7 +77,7 @@
 * #### ` c0b17610965450a89598da491ce9b6b5cbd6393f `
 * #### ` 8364383c359a6b738a436d1b7745ccdce178df47 `
 
- ## Кто автор функции synchronizedWriters?
+ ## 8. Кто автор функции synchronizedWriters?
 
 <img width="1920" height="1080" alt="Снимок экрана (1573)" src="https://github.com/user-attachments/assets/a87992fb-0a09-4628-acd2-ad05906328dd" />
 
