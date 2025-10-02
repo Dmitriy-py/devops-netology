@@ -158,9 +158,41 @@ c0b17610965450a89598da491ce9b6b5cbd6393f prevent log output during init
 
  ## 7. Кто автор функции synchronizedWriters?
 
-<img width="1920" height="1080" alt="Снимок экрана (1573)" src="https://github.com/user-attachments/assets/a87992fb-0a09-4628-acd2-ad05906328dd" />
+### Команда: ### ` git log -S 'synchronizedWriters' `
+### Вывод:
 
-### Author: ` Martin Atkins <mart@degeneration.co.uk> ` так как у него был самый ранний коммит с этой функцией...
+```
+commit bdfea50cc85161dea41be0fe3381fd98731ff786
+Author: James Bardin <j.bardin@gmail.com>
+Date:   Mon Nov 30 18:02:04 2020 -0500
+
+    remove unused
+
+commit fd4f7eb0b935e5a838810564fd549afe710ae19a
+Author: James Bardin <j.bardin@gmail.com>
+Date:   Wed Oct 21 13:06:23 2020 -0400
+
+    remove prefixed io
+    
+    The main process is now handling what output to print, so it doesn't do
+    any good to try and run it through prefixedio, which is only adding
+    extra coordination to echo the same data.
+
+commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Wed May 3 16:25:41 2017 -0700
+
+    main: synchronize writes to VT100-faker on Windows
+    
+    We use a third-party library "colorable" to translate VT100 color
+    sequences into Windows console attribute-setting calls when Terraform is
+    running on Windows.
+
+
+```
+
+### Author: ` Martin Atkins <mart@degeneration.co.uk>  Date:   Wed May 3 16:25:41 2017 `
+* так как у него был самый ранний коммит с этой функцией...
 
 
 
