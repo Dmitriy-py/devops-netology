@@ -18,20 +18,20 @@
 6. Кто автор функции synchronizedWriters?
 
 
-## Ответ:
+## Ответы:
 
-## 1. Клонирование репазитория:
+## 1. Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea:
 
-<img width="1920" height="1080" alt="Снимок экрана (1561)" src="https://github.com/user-attachments/assets/19ac1968-8b3c-45b5-b71b-42d964f7424c" />
+### Команда:
+```
+git show aefea
 
-## 2. Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea:
-
-<img width="1920" height="1080" alt="Снимок экрана (1564)" src="https://github.com/user-attachments/assets/18b9f19c-d0a1-42d5-a104-b7215f5a8963" />
+```
 
 ### Полный хеш: ` aefead2207ef7e2aa5dc81a34aedf0cad4c32545 `
 ### Комментарий: ` Update CHANGELOG.md `
 
-## 3. Какому тегу соответствует коммит 85024d3?
+## 2. Какому тегу соответствует коммит 85024d3?
 
 <img width="1920" height="1080" alt="Снимок экрана (1566)" src="https://github.com/user-attachments/assets/b3199190-f2ce-43f1-95b7-0c7604521ccc" />
 
