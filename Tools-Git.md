@@ -137,7 +137,18 @@ Date:   Thu Apr 2 18:04:39 2020 -0700
 
 ## 6. Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
-<img width="1920" height="1080" alt="Снимок экрана (1572)" src="https://github.com/user-attachments/assets/e6b6ac13-53ef-4a59-b6f8-1bec6b0c2208" />
+### Команда: ### ` git log -G "globalPluginDirs" --pretty=format:"%H %s" `
+### Вывод:
+
+```
+7c4aeac5f30aed09c5ef3198141b033eea9912be stacks: load credentials from config file on startup (#35952)
+22a2580e93170eac46621ab97decaec989d52edb main: Use the new cliconfig package credentials source
+35a058fb3ddfae9cfee0b3893822c9a95b920f4c main: configure credentials from the CLI config file
+c0b17610965450a89598da491ce9b6b5cbd6393f prevent log output during init
+8364383c359a6b738a436d1b7745ccdce178df47 Push plugin discovery down into command package
+
+```
+
 
 ### коммиты, в которых была изменена функция globalPluginDirs
 * #### ` 22a2580e93170eac46621ab97decaec989d52edb `
