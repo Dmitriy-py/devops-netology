@@ -132,7 +132,64 @@
 
 ---
 
+### **Часть 4. Подготовка файла `rebase.sh` (ветка `git-rebase`)**
+
+**Шаг 1-2. Создание ветки `git-rebase` от коммита `prepare for merge and rebase`**
+
+1.  **Команды:**
+    ```bash
+    git checkout ee8b901 # Или другой хеш, если вы его переопределяли
+    git switch -c git-rebase
+    # (Если ветка git-rebase существовала, то git checkout git-rebase и git reset --hard ee8b901)
+    ```
+
+**Шаг 3-4. Изменение `rebase.sh` ( `git-rebase 1` )**
+
+1.  **Измененное содержимое `branching/rebase.sh`:**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$@"; do
+        echo "Parameter: $param"
+        count=$(( $count + 1 ))
+    done
+    ```
+2.  **Команды коммита и пуша:**
+    ```bash
+    git add branching/rebase.sh
+    git commit -m "git-rebase 1"
+    git push -u origin git-rebase -f # Используем -f, так как это переписывание истории
+    git push -u gitlab git-rebase -f
+    ```
+
+**Шаг 5-6. Изменение `rebase.sh` ( `git-rebase 2` )**
+
+1.  **Измененное содержимое `branching/rebase.sh`:**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$@"; do
+        echo "Next parameter: $param"
+        count=$(( $count + 1 ))
+    done
+    ```
+2.  **Команды коммита и пуша:**
+    ```bash
+    git add branching/rebase.sh
+    git commit -m "git-rebase 2"
+    git push origin git-rebase -f
+    git push gitlab git-rebase -f
+    ```
+
+---
+
+
 <img width="1920" height="1080" alt="Снимок экрана (1547)" src="https://github.com/user-attachments/assets/7d69cd66-0956-44a5-b33f-a386e1f8b799" />
+
 
 <img width="1920" height="1080" alt="Снимок экрана (1549)" src="https://github.com/user-attachments/assets/0a7715a5-a713-4146-a104-83a978ea9172" />
 
