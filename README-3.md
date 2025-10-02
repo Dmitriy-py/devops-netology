@@ -8,6 +8,29 @@
 
 **Шаг 1. Создание каталога `branching` и файлов `merge.sh`, `rebase.sh`**
 
+**Содержимое `branching/merge.sh` :**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$*"; do
+        echo "\$* Parameter #$count = $param"
+        count=$(( $count + 1 ))
+    done
+    ```
+3.  **Содержимое `branching/rebase.sh` :**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$*"; do
+        echo "\$* Parameter #$count = $param"
+        count=$(( $count + 1 ))
+    done
+    ```
+
 <img width="1920" height="1080" alt="Снимок экрана (1539)" src="https://github.com/user-attachments/assets/6f6c772f-4427-4d7f-b580-da21b1f66c03" />
 
 <img width="1920" height="1080" alt="Снимок экрана (1541)" src="https://github.com/user-attachments/assets/06a2eea5-d0ba-482a-b2ee-89837e0341b6" />
