@@ -72,10 +72,10 @@
 <img width="1920" height="1080" alt="Снимок экрана (1572)" src="https://github.com/user-attachments/assets/e6b6ac13-53ef-4a59-b6f8-1bec6b0c2208" />
 
 ### коммиты, в которых была изменена функция globalPluginDirs
-* ` 22a2580e93170eac46621ab97decaec989d52edb `
-* ` 35a058fb3ddfae9cfee0b3893822c9a95b920f4c `
-* ` c0b17610965450a89598da491ce9b6b5cbd6393f `
-* ` 8364383c359a6b738a436d1b7745ccdce178df47 `
+* #### ` 22a2580e93170eac46621ab97decaec989d52edb `
+* #### ` 35a058fb3ddfae9cfee0b3893822c9a95b920f4c `
+* #### ` c0b17610965450a89598da491ce9b6b5cbd6393f `
+* #### ` 8364383c359a6b738a436d1b7745ccdce178df47 `
 
  ## Кто автор функции synchronizedWriters?
 
