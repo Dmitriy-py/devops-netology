@@ -9,7 +9,9 @@
 **Шаг 1. Создание каталога `branching` и файлов `merge.sh`, `rebase.sh`**
 
 **Содержимое `branching/merge.sh` :**
-    ```bash
+   
+    ```
+    bash
     #!/bin/bash
     # display command line options
 
@@ -20,7 +22,9 @@
     done
     ```
 3.  **Содержимое `branching/rebase.sh` :**
-    ```bash
+
+     ```
+     bash
     #!/bin/bash
     # display command line options
 
