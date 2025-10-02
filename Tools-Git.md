@@ -65,7 +65,7 @@
 <img width="1920" height="1080" alt="Снимок экрана (1571)" src="https://github.com/user-attachments/assets/784063bb-7b17-4c76-aa0b-c330c5f17afa" />
 
 ### Коммит, в котором была создана функция func providerSource
-` commit 8c928e83589d90a031f811fae52a81be7153e82f `
+### ` commit 8c928e83589d90a031f811fae52a81be7153e82f `
 
 ## Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
