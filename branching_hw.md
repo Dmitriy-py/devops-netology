@@ -279,8 +279,10 @@
 <img width="1920" height="1080" alt="Снимок экрана (1558)" src="https://github.com/user-attachments/assets/2fceaaf6-75b8-47b7-87d6-7158d8376e6f" />
 
 
+<img width="1920" height="1080" alt="Снимок экрана (1559)" src="https://github.com/user-attachments/assets/3f731a00-bbe0-4960-87f4-345929240983" />
 
 
+<img width="1920" height="1080" alt="Снимок экрана (1560)" src="https://github.com/user-attachments/assets/44cb43e0-7e85-448c-8863-2fed95f9052b" />
 
 
 
