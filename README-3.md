@@ -43,6 +43,93 @@
 
 ### **Часть 2. Подготовка файла `merge.sh` (ветка `git-merge`)**
 
+**Шаг 1. Создание ветки `git-merge`**
+
+1.  **Команда создания ветки:**
+    ```bash
+    git switch -c git-merge
+    ```
+
+**Шаг 2-3. Изменение `merge.sh` ( `@ instead *` )**
+
+1.  **Измененное содержимое `branching/merge.sh`:**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$@"; do
+        echo "\$@ Parameter #$count = $param"
+        count=$(( $count + 1 ))
+    done
+    ```
+2.  **Команды коммита и пуша:**
+    ```bash
+    git add branching/merge.sh
+    git commit -m "merge: @ instead *"
+    git push -u origin git-merge
+    git push -u gitlab git-merge
+    ```
+
+**Шаг 4-5. Изменение `merge.sh` ( `use shift` )**
+
+1.  **Измененное содержимое `branching/merge.sh`:**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    while [[ -n "$1" ]]; do
+        echo "Parameter #$count = $1"
+        count=$(( $count + 1 ))
+        shift
+    done
+    ```
+2.  **Команды коммита и пуша:**
+    ```bash
+    git add branching/merge.sh
+    git commit -m "merge: use shift"
+    git push origin git-merge
+    git push gitlab git-merge
+    ```
+
+---
+
+### **Часть 3. Изменения в `main`**
+
+**Шаг 1-2. Возврат в `main` и изменение `rebase.sh`**
+
+1.  **Команда возврата в `main`:**
+    ```bash
+    git checkout main
+    ```
+2.  **Измененное содержимое `branching/rebase.sh`:**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$@"; do
+        echo "\$@ Parameter #$count = $param"
+        count=$(( $count + 1 ))
+    done
+
+    echo "====="
+    ```
+
+**Шаг 3. Отправка измененной `main`**
+
+1.  **Команды коммита и пуша:**
+    ```bash
+    git add branching/rebase.sh
+    git commit -m "main: added echo separator"
+    git push origin main
+    git push gitlab main
+    ```
+
+---
+
+
 <img width="1920" height="1080" alt="Снимок экрана (1546)" src="https://github.com/user-attachments/assets/1c4f830a-5c4d-44bd-97b8-6f34889fa665" />
 
 <img width="1920" height="1080" alt="Снимок экрана (1547)" src="https://github.com/user-attachments/assets/7d69cd66-0956-44a5-b33f-a386e1f8b799" />
