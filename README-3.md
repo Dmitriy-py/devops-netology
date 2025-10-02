@@ -21,7 +21,7 @@
         count=$(( $count + 1 ))
     done
     ```
-3.  **Содержимое `branching/rebase.sh` :**
+**Содержимое `branching/rebase.sh` :**
 
      ```
      bash
