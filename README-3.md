@@ -189,24 +189,98 @@
 
 <img width="1920" height="1080" alt="Снимок экрана (1547)" src="https://github.com/user-attachments/assets/7d69cd66-0956-44a5-b33f-a386e1f8b799" />
 
+### **Часть 5. Промежуточный итог и Merge**
+
+**Промежуточный итог: Схема коммитов**
 
 <img width="1920" height="1080" alt="Снимок экрана (1549)" src="https://github.com/user-attachments/assets/0a7715a5-a713-4146-a104-83a978ea9172" />
 
-<img width="1920" height="1080" alt="Снимок экрана (1550)" src="https://github.com/user-attachments/assets/5fbda66d-ea39-48e3-884b-7854b9058ba0" />
+**Merge ветки `git-merge` в `main`**
 
-<img width="1920" height="1080" alt="Снимок экрана (1551)" src="https://github.com/user-attachments/assets/23795a92-21e4-4515-bdf6-37ec61d2d234" />
+1.  **Команды слияния и пуша:**
+    ```bash
+    git checkout main
+    git merge git-merge
 
-<img width="1920" height="1080" alt="Снимок экрана (1552)" src="https://github.com/user-attachments/assets/efc7f647-1f5d-4f92-bea0-382cfa85a34a" />
+<img width="1920" height="1080" alt="Снимок экрана (1550)" src="https://github.com/user-attachments/assets/2c49b458-a1a2-4016-a096-8d9cd79217ce" />
 
-<img width="1920" height="1080" alt="Снимок экрана (1553)" src="https://github.com/user-attachments/assets/28e0b35a-88c6-4c01-a8c7-d07289041f07" />
 
-<img width="1920" height="1080" alt="Снимок экрана (1554)" src="https://github.com/user-attachments/assets/72f1e0f9-a8a4-4786-8c80-fbfe9f13181e" />
+    git push origin main
+    git push gitlab main
+    ```
 
-<img width="1920" height="1080" alt="Снимок экрана (1555)" src="https://github.com/user-attachments/assets/a455f523-7d6b-47e3-a453-b828a1e07661" />
+ ### **Часть 6. Rebase и финальное слияние**
 
-<img width="1920" height="1080" alt="Снимок экрана (1556)" src="https://github.com/user-attachments/assets/f4ff3969-0d40-4bf2-9f87-8ffa451785f2" />
+**Шаг 1-6. Rebase ветки `git-rebase` на `main` и разрешение конфликтов**
 
-<img width="1920" height="1080" alt="Снимок экрана (1557)" src="https://github.com/user-attachments/assets/15a355a6-1e8e-43fa-ba06-927b6a1665d1" />
+1.  **Команды и выводы:**
+    ```bash
+    git checkout git-rebase
+    git rebase -i main
 
-<img width="1920" height="1080" alt="Снимок экрана (1558)" src="https://github.com/user-attachments/assets/e8975bef-8392-4d8a-bd9f-35ea7300220e" />
+<img width="1920" height="1080" alt="Снимок экрана (1552)" src="https://github.com/user-attachments/assets/408185f4-ca14-4d48-9ecf-a89d6ae0abf5" />
+
+    nano branching/rebase.sh
+    git add branching/rebase.sh
+    git rebase --continue
+
+<img width="1920" height="1080" alt="Снимок экрана (1553)" src="https://github.com/user-attachments/assets/3b8b0e73-eddf-4945-a7fd-6cbe305a70ac" />
+
+
+    nano branching/rebase.sh
+    git add branching/rebase.sh
+    git rebase --continue
+
+<img width="1920" height="1080" alt="Снимок экрана (1554)" src="https://github.com/user-attachments/assets/ca94405d-ab18-4c11-87ef-beaf32de12f0" />
+
+    ```
+
+1.  **Содержимое `branching/rebase.sh` после разрешения всех конфликтов (финальная версия в `git-rebase`):**
+    ```bash
+    #!/bin/bash
+    # display command line options
+
+    count=1
+    for param in "$@"; do
+        echo "Next parameter: $param"
+        count=$(( $count + 1 ))
+    done
+
+    echo "====="
+    ```
+
+**Шаг 7-8. Отправка перебазированной ветки `git-rebase` с `force`**
+
+1.  **Команды и выводы:**
+    ```bash
+    git push -u origin git-rebase # Ожидаемая ошибка rejected
+
+<img width="1920" height="1080" alt="Снимок экрана (1555)" src="https://github.com/user-attachments/assets/421392de-3d21-42ac-93f2-70832bf7007c" />
+
+    
+    git push -u origin git-rebase -f # Принудительная отправка
+
+<img width="1920" height="1080" alt="Снимок экрана (1556)" src="https://github.com/user-attachments/assets/2bf9722c-26fb-444e-8c17-aec3b5549ac0" />
+
+
+    ```
+
+  **Шаг 9. Слияние `git-rebase` в `main`**
+
+1.  **Команды слияния и пуша:**
+    ```bash
+    git checkout main
+    git merge git-rebase
+    # Вывод: Merge made by the 'ort' strategy. branching/rebase.sh | 2 +-
+    git push origin main
+    git push gitlab main
+    ```
+
+<img width="1920" height="1080" alt="Снимок экрана (1558)" src="https://github.com/user-attachments/assets/2fceaaf6-75b8-47b7-87d6-7158d8376e6f" />
+
+
+
+
+
+
 
