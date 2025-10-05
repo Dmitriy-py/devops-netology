@@ -153,10 +153,8 @@ c0b17610965450a89598da491ce9b6b5cbd6393f prevent log output during init
 
 
 ### коммиты, в которых была изменена функция globalPluginDirs
-* #### ` 22a2580e93170eac46621ab97decaec989d52edb `
-* #### ` 35a058fb3ddfae9cfee0b3893822c9a95b920f4c `
-* #### ` c0b17610965450a89598da491ce9b6b5cbd6393f `
-* #### ` 8364383c359a6b738a436d1b7745ccdce178df47 `
+* #### ` 7c4aeac5f30aed09c5ef3198141b033eea9912be `
+
 
  ## 7. Кто автор функции synchronizedWriters?
 
