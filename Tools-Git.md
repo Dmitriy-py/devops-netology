@@ -24,7 +24,7 @@
 
 ### Команда: ### ` git show aefea `
 ### Вывод:
-```
+```python
 commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545
 Author: Alisdair McDiarmid <alisdair@users.noreply.github.com>
 Date:   Thu Jun 18 10:29:58 2020 -0400
@@ -41,7 +41,7 @@ Date:   Thu Jun 18 10:29:58 2020 -0400
 
 ### Команда: ### ` git log 85024d3 --oneline `
 ### Вывод:
-```
+```python
 85024d3100 (tag: v0.12.23) v0.12.23
 
 ```
@@ -53,7 +53,7 @@ Date:   Thu Jun 18 10:29:58 2020 -0400
 ### Команда: ### ` git show b8d720 `
 ### Вывод:
 
-```
+```python
 commit b8d720f8340221f2146e4e4870bf2ee0bc48f2d5
 Merge: 56cd7859e0 9ea88f22fc
 Author: Chris Griggs <cgriggs@hashicorp.com>
@@ -65,7 +65,7 @@ Merge: 56cd7859e0 9ea88f22fc- указывает на количество ро�
 ### Команда: ### ` git show b8d720^1 `
 ### Вывод:
 
-```
+```python
 commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
 Merge: 58dcac4b79 ffbcf55817
 Author: Chris Griggs <cgriggs@hashicorp.com>
@@ -77,7 +77,7 @@ Date:   Mon Jan 13 13:19:09 2020 -0800
 ### Команда: ### ` git show b8d720^2 `
 ### Вывод:
 
-```
+```python
 commit 9ea88f22fc6269854151c571162c5bcf958bee2b
 Author: Chris Griggs <cgriggs@hashicorp.com>
 Date:   Tue Jan 21 17:08:06 2020 -0800
@@ -95,7 +95,7 @@ Date:   Tue Jan 21 17:08:06 2020 -0800
 ### --pretty=format:"%H %s": Эта опция форматирует вывод, чтобы показать полный хеш коммита (%H) и краткое сообщение коммита (%s), что соответствует требованиям задания (“Перечислите хеши и комментарии всех коммитов…”).
 ### Вывод:
 
-```
+```python
 33ff1c03bb960b332be3af2e333462dde88b279e v0.12.24
 b14b74c4939dcab573326f4e3ee2a62e23e12f89 [Website] vmc provider links
 3f235065b9347a758efadc92295b540ee0a5e26e Update CHANGELOG.md
@@ -126,7 +126,7 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 ### Команда: ### ` git log -S 'func providerSource(' `
 ### Вывод:
 
-```
+```python
 commit 8c928e83589d90a031f811fae52a81be7153e82f
 Author: Martin Atkins <mart@degeneration.co.uk>
 Date:   Thu Apr 2 18:04:39 2020 -0700
@@ -142,7 +142,7 @@ Date:   Thu Apr 2 18:04:39 2020 -0700
 ### --pretty=format:"%H %s": Эта опция форматирует вывод, чтобы показать полный хеш коммита (%H) и краткое сообщение коммита (%s), что соответствует требованиям задания (“Перечислите хеши и комментарии всех коммитов…”).
 ### Вывод:
 
-```
+```python
 7c4aeac5f30aed09c5ef3198141b033eea9912be stacks: load credentials from config file on startup (#35952)
 22a2580e93170eac46621ab97decaec989d52edb main: Use the new cliconfig package credentials source
 35a058fb3ddfae9cfee0b3893822c9a95b920f4c main: configure credentials from the CLI config file
@@ -161,7 +161,7 @@ c0b17610965450a89598da491ce9b6b5cbd6393f prevent log output during init
 ### Команда: ### ` git log -S 'synchronizedWriters' `
 ### Вывод:
 
-```
+```python
 commit bdfea50cc85161dea41be0fe3381fd98731ff786
 Author: James Bardin <j.bardin@gmail.com>
 Date:   Mon Nov 30 18:02:04 2020 -0500
