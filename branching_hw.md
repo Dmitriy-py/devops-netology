@@ -9,7 +9,7 @@
 **Шаг 1. Создание каталога `branching` и файлов `merge.sh`, `rebase.sh`**
 
 **Содержимое `branching/merge.sh` :**
-    ```bash
+```bash
     #!/bin/bash
     # display command line options
 
@@ -18,9 +18,9 @@
         echo "\$* Parameter #$count = $param"
         count=$(( $count + 1 ))
     done
-    ```
+```
 **Содержимое `branching/rebase.sh` :**
-    ```bash
+```bash
     #!/bin/bash
     # display command line options
 
@@ -29,7 +29,7 @@
         echo "\$* Parameter #$count = $param"
         count=$(( $count + 1 ))
     done
-    ```
+```
 
 **Шаг 2. Создание коммита `prepare for merge and rebase` и отправка его в `main`**
 
