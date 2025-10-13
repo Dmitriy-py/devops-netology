@@ -96,21 +96,95 @@ Hey, Netology
 
 <img width="1920" height="1080" alt="Снимок экрана (1616)" src="https://github.com/user-attachments/assets/8b363c83-7933-4a4f-871f-175642c81a24" />
 
+## Задача 5
+
+Создайте отдельную директорию(например /tmp/netology/docker/task5) и 2 файла внутри него. "compose.yaml" с содержимым:
+```yaml
+version: "3"
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+"docker-compose.yaml" с содержимым:
+```yaml
+version: "3"
+services:
+  registry:
+    image: registry:2
+
+    ports:
+    - "5000:5000"
+```
+И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
+
+Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
+
+Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
+
+Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
+
+Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
+```yaml
+version: '3'
+
+services:
+  nginx:
+    image: 127.0.0.1:5000/custom-nginx
+    ports:
+      - "9090:80"
+```
+Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
+
+Удалите любой из манифестов компоуза(например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+
+В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+## Ответ:
 
 
 
+<img width="1920" height="1080" alt="Снимок экрана (1618)" src="https://github.com/user-attachments/assets/1a447b0f-ae05-4fdb-9344-cc9cf767efe7" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1619)" src="https://github.com/user-attachments/assets/c6229c85-4d76-4e63-87be-bb6265c324c3" />
 
+### `compose.yaml` после редактирования:
+```yaml
+version: "3"
+include:
+  - docker-compose.yaml
+services:
+  portainer:
+    network_mode: host
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
 
+<img width="1920" height="1080" alt="Снимок экрана (1622)" src="https://github.com/user-attachments/assets/56a33faf-6311-4713-8f6b-783f397afc78" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1623)" src="https://github.com/user-attachments/assets/9326c6b8-6c7e-4742-b515-a5a731aeb724" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1624)" src="https://github.com/user-attachments/assets/bd57a064-374c-49b0-a86d-53724fc7812b" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1625)" src="https://github.com/user-attachments/assets/e8dd746d-a35c-47af-8f80-063d6c13a886" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1626)" src="https://github.com/user-attachments/assets/b48fe937-438f-4342-b2ef-be7bbd6b9809" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1627)" src="https://github.com/user-attachments/assets/10d7a57b-9a4f-44b9-bffd-1cb272285460" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1628)" src="https://github.com/user-attachments/assets/d1cb7a58-26d2-486e-ab85-4844532ff6af" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1629)" src="https://github.com/user-attachments/assets/b157ab77-ce98-4ae4-8ea9-ed1011523d83" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1630)" src="https://github.com/user-attachments/assets/7de106b4-d866-42fc-a355-3bbec22ec737" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1631)" src="https://github.com/user-attachments/assets/7028f934-7ddb-4c06-8060-a6c92f5a9082" />
 
+<img width="1920" height="1080" alt="Снимок экрана (1632)" src="https://github.com/user-attachments/assets/4684cc7b-adae-4849-be53-987974fc05dc" />
+
+<img width="1920" height="1080" alt="Снимок экрана (1633)" src="https://github.com/user-attachments/assets/19eda5e4-2aa4-456f-9e79-cb7ada69413c" />
 
 
