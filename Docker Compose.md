@@ -84,6 +84,8 @@ Hey, Netology
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Ответ:
+
 <img width="1920" height="1080" alt="Снимок экрана (1612)" src="https://github.com/user-attachments/assets/117abc58-a216-432e-ad55-e5abdf9a3612" />
 
 <img width="1920" height="1080" alt="Снимок экрана (1613)" src="https://github.com/user-attachments/assets/e92c455d-af1c-4e54-8919-efa998ba3a45" />
